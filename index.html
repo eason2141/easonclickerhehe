@@ -19,13 +19,13 @@
   </body>
   <script>
     function postCount() {
-      fetch("https://62e82d44-d4dc-4dfc-8b9b-db83dac6b8fa-00-2cb25afwwp75k.pike.replit.dev/api/count", {
+      fetch("https://eason2141.github.io/easonclickerhehe/api/count", {
         method: "POST",
       });
     }
 
     setInterval(() => {
-      fetch("https://62e82d44-d4dc-4dfc-8b9b-db83dac6b8fa-00-2cb25afwwp75k.pike.replit.dev/api/count")
+      fetch("https://eason2141.github.io/easonclickerhehe/api/count")
         .then((res) => res.json())
         .then((data) => {
           document.getElementById("count").innerHTML = data.count;
